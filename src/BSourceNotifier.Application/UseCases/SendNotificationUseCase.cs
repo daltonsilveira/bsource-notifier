@@ -26,7 +26,7 @@ public sealed class SendNotificationUseCase
             command.Title,
             command.Message,
             channelTypes,
-            new NotificationTarget(command.Target.UserId, command.Target.Email, command.Target.PhoneNumber),
+            new NotificationTarget(command.Target.UserId, command.Target.Email, command.Target.PhoneNumber, command.Target.Data),
             DateTime.UtcNow);
 
         foreach (var channelType in notification.Channels)
