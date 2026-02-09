@@ -41,7 +41,8 @@ public sealed class WebSocketNotificationChannel : INotificationChannel
                 notification.CreatedAt,
                 notification.Target.UserId,
                 notification.Target.Email,
-                notification.Target.PhoneNumber
+                notification.Target.PhoneNumber,
+                notification.Target.Data
             },
             cancellationToken);
     }
