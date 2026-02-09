@@ -1,0 +1,11 @@
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/bin/Debug/net8.0/BSourceNotifier.Domain.deps.json
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/bin/Debug/net8.0/BSourceNotifier.Domain.dll
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/bin/Debug/net8.0/BSourceNotifier.Domain.pdb
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/BSourceNotifier.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/BSourceNotifier.Domain.AssemblyInfoInputs.cache
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/BSourceNotifier.Domain.AssemblyInfo.cs
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/BSourceNotifier.Domain.csproj.CoreCompileInputs.cache
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/BSourceNotifier.Domain.dll
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/refint/BSourceNotifier.Domain.dll
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/BSourceNotifier.Domain.pdb
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/Debug/net8.0/ref/BSourceNotifier.Domain.dll

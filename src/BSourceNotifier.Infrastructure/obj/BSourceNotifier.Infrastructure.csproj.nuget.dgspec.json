@@ -1,0 +1,266 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Infrastructure/BSourceNotifier.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Application/BSourceNotifier.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Application/BSourceNotifier.Application.csproj",
+        "projectName": "BSourceNotifier.Application",
+        "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Application/BSourceNotifier.Application.csproj",
+        "packagesPath": "/home/daltonsilveira/.nuget/packages/",
+        "outputPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daltonsilveira/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/BSourceNotifier.Contracts.csproj": {
+                "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/BSourceNotifier.Contracts.csproj"
+              },
+              "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/BSourceNotifier.Domain.csproj": {
+                "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/BSourceNotifier.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/BSourceNotifier.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/BSourceNotifier.Contracts.csproj",
+        "projectName": "BSourceNotifier.Contracts",
+        "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/BSourceNotifier.Contracts.csproj",
+        "packagesPath": "/home/daltonsilveira/.nuget/packages/",
+        "outputPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daltonsilveira/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/BSourceNotifier.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/BSourceNotifier.Domain.csproj",
+        "projectName": "BSourceNotifier.Domain",
+        "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/BSourceNotifier.Domain.csproj",
+        "packagesPath": "/home/daltonsilveira/.nuget/packages/",
+        "outputPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daltonsilveira/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Infrastructure/BSourceNotifier.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Infrastructure/BSourceNotifier.Infrastructure.csproj",
+        "projectName": "BSourceNotifier.Infrastructure",
+        "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Infrastructure/BSourceNotifier.Infrastructure.csproj",
+        "packagesPath": "/home/daltonsilveira/.nuget/packages/",
+        "outputPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daltonsilveira/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Application/BSourceNotifier.Application.csproj": {
+                "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Application/BSourceNotifier.Application.csproj"
+              },
+              "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/BSourceNotifier.Contracts.csproj": {
+                "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/BSourceNotifier.Contracts.csproj"
+              },
+              "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/BSourceNotifier.Domain.csproj": {
+                "projectPath": "/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Domain/BSourceNotifier.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

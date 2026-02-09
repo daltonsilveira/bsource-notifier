@@ -1,0 +1,11 @@
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/bin/Debug/net8.0/BSourceNotifier.Contracts.deps.json
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/bin/Debug/net8.0/BSourceNotifier.Contracts.dll
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/bin/Debug/net8.0/BSourceNotifier.Contracts.pdb
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/BSourceNotifier.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/BSourceNotifier.Contracts.AssemblyInfoInputs.cache
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/BSourceNotifier.Contracts.AssemblyInfo.cs
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/BSourceNotifier.Contracts.csproj.CoreCompileInputs.cache
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/BSourceNotifier.Contracts.dll
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/refint/BSourceNotifier.Contracts.dll
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/BSourceNotifier.Contracts.pdb
+/home/daltonsilveira/repos/bsource-notifier/src/BSourceNotifier.Contracts/obj/Debug/net8.0/ref/BSourceNotifier.Contracts.dll

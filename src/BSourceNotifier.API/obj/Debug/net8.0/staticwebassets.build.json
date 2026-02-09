@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hjSgGysCkfR29bYSOIZgzI3LGDYl808OJDlWpPIQdXc=",
+  "Source": "BSourceNotifier.API",
+  "BasePath": "_content/BSourceNotifier.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

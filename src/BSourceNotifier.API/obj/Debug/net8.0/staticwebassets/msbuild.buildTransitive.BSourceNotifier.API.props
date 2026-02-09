@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/BSourceNotifier.API.props" />
+</Project>

@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "BSourceNotifier.API",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/BSourceNotifier.API/bin/Debug/net8.0/BSourceNotifier.API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/BSourceNotifier.API",
+      "stopAtEntry": false,
+      "console": "externalTerminal",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  ]
+}
