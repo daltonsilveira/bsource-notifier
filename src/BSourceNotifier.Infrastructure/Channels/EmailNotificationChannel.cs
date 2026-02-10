@@ -33,9 +33,10 @@ public sealed class EmailNotificationChannel : INotificationChannel
             return;
         }
 
-        if (string.IsNullOrWhiteSpace(notification.Target.Email))
+        var emailTarget = notification.Target.Endpoints.Email;
+        if (emailTarget is null || string.IsNullOrWhiteSpace(emailTarget.To))
         {
-            throw new InvalidOperationException("Target email is required for email notifications.");
+            throw new InvalidOperationException("Target email endpoint is required for email notifications.");
         }
 
         var model = NormalizeModel(notification.Target.Data);
@@ -44,7 +45,7 @@ public sealed class EmailNotificationChannel : INotificationChannel
             notification.Message,
             model);
 
-        using var message = new MailMessage(settings.From, notification.Target.Email)
+        using var message = new MailMessage(settings.From, emailTarget.To)
         {
             Subject = notification.Title,
             Body = body,
