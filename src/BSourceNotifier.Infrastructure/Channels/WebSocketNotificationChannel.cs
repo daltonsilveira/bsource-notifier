@@ -30,7 +30,11 @@ public sealed class WebSocketNotificationChannel : INotificationChannel
             return;
         }
 
-        var groupName = $"user-{notification.Target.UserId}";
+        var groupName = notification.Target.Endpoints.WebSocket?.Group;
+        if (string.IsNullOrWhiteSpace(groupName))
+        {
+            groupName = $"user-{notification.Target.UserId}";
+        }
         await _hubContext.Clients.Group(groupName).SendAsync(
             "notification",
             new
@@ -40,8 +44,7 @@ public sealed class WebSocketNotificationChannel : INotificationChannel
                 notification.Message,
                 notification.CreatedAt,
                 notification.Target.UserId,
-                notification.Target.Email,
-                notification.Target.PhoneNumber
+                notification.Target.Data
             },
             cancellationToken);
     }
