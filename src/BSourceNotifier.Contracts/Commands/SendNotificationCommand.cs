@@ -9,5 +9,4 @@ public sealed class SendNotificationCommand
     public string Message { get; init; } = string.Empty;
     public NotificationChannelType[] Channels { get; init; } = Array.Empty<NotificationChannelType>();
     public NotificationTargetDto Target { get; init; } = new();
-    public Dictionary<string, string> Metadata { get; init; } = new();
 }

@@ -1,25 +1,4 @@
 services:
-  # ── RabbitMQ ──────────────────────────────────────────────
-  rabbitmq:
-    image: rabbitmq:3-management-alpine
-    container_name: bsource-rabbitmq
-    ports:
-      - "5672:5672"   # AMQP
-      - "15672:15672" # Management UI
-    environment:
-      RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-guest}
-      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASS:-guest}
-      RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST:-/}
-    volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
-    healthcheck:
-      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-    networks:
-      - bsource-net
-
   # ── BSourceNotifier API ──────────────────────────────────
   api:
     build:
@@ -34,15 +13,6 @@ services:
       # ── Application ──────────────────────────────────────
       Application__Name: BSourceNotifier
       Application__Environment: ${ASPNETCORE_ENVIRONMENT:-Production}
-
-      # ── MassTransit / RabbitMQ ───────────────────────────
-      MassTransit__RabbitMq__Host: rabbitmq
-      MassTransit__RabbitMq__VirtualHost: ${RABBITMQ_VHOST:-/}
-      MassTransit__RabbitMq__Username: ${RABBITMQ_USER:-guest}
-      MassTransit__RabbitMq__Password: ${RABBITMQ_PASS:-guest}
-      MassTransit__RabbitMq__Queue: ${RABBITMQ_QUEUE:-notification.send}
-      MassTransit__Retry__RetryCount: ${MASSTRANSIT_RETRY_COUNT:-3}
-      MassTransit__Retry__IntervalSeconds: ${MASSTRANSIT_RETRY_INTERVAL:-10}
 
       # ── Notification – WebSocket ─────────────────────────
       Notification__WebSocket__Enabled: ${WEBSOCKET_ENABLED:-true}
@@ -60,14 +30,8 @@ services:
       Notification__Sms__Enabled: ${SMS_ENABLED:-false}
       Notification__Telegram__Enabled: ${TELEGRAM_ENABLED:-false}
       Notification__WhatsApp__Enabled: ${WHATSAPP_ENABLED:-false}
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
     networks:
       - bsource-net
-
-volumes:
-  rabbitmq_data:
 
 networks:
   bsource-net:
