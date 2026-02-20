@@ -18,6 +18,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHealthChecks();
 builder.Services.AddSignalR();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("DevCors", policy =>
+        policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
 
 builder.Services.Configure<NotificationOptions>(builder.Configuration.GetSection("Notification"));
 
@@ -64,7 +71,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+app.UseCors("DevCors");
 app.MapControllers();
 app.MapHealthChecks("/health");
 app.MapHub<NotificationHub>("/hubs/notifications");
